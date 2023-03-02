@@ -6,7 +6,7 @@ class Elefante(Animal):
     #Atributos
 
     def __init__(self, nome, idade, especie, cor, som, tamanho):
-        Animal.__init__(nome, idade, especie, cor, som)
+        Animal.__init__(self, nome, idade, especie, cor, som)
         self.tamanho = tamanho
 
 

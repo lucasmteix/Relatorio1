@@ -1,16 +1,20 @@
 from Elefante import Elefante
 
-elefante1 = Elefante("nome", 12, "especie", "cinza", "som", "medio")
 
-print(elefante1.som)
+#Instanciando o objeto e fazendo a entrada
+print("Insira os dados do animal:") #texto de instrucao
+elefante1 = Elefante(input("Nome: "), input("Idade: "), input("Espécie: "), input("Cor: "),
+                     input("Som: "), input("Tamanho: "))
 
+print("Som original: " + elefante1.som) #saida do som original
+
+#Estrutura de decisao para decidir sobre mudar ou nao o som do elefante
 if(elefante1.especie == "Africano"):
-    if(elefante1.idade < 10):
+    if(int(elefante1.idade) < 10):
         elefante1.tamanho = "pequeno"
         elefante1.som = "Paaah"
     else:
         elefante1.tamanho = "grande"
         elefante1.som = "PAHHHHHH"
-
-print (elefante1.nome, elefante1.idade, elefante1.especie, elefante1.cor,
-       elefante1.som, elefante1.tamanho)
+    print("Novo som: " + elefante1.som) #saida do novo som
+    print("Novo tamanho: " + elefante1.tamanho) #saida do novo tamanho
