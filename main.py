@@ -17,4 +17,4 @@ if(elefante1.especie == "Africano"):
         elefante1.tamanho = "grande"
         elefante1.som = "PAHHHHHH"
     print("Novo som: " + elefante1.som) #saida do novo som
-    print("Novo tamanho: " + elefante1.tamanho) #saida do novo tamanho
+    print("Novo tamanho: " + elefante1.tamanho)
